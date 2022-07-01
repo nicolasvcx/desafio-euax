@@ -6,5 +6,9 @@ Esta aplicação web foi desenvolvida com o microframework python Flask e o banc
 
 De maneira bem simples após clonar este diretório sera apenas necessário acessar a pasta e executar o comando 
 ````
-Flask Run
+flask Run
+````
+Um servidor local será iniciado na porta 5000, sendo assim comumente possível acessá-lo atráves com a seguinte URL
+````
+http://127.0.0.1:5000
 ````
