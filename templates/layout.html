@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />    </head>
+    <header>
+        <div class="nav-bar">
+            <a href="novo_projeto">Novo Projeto</a>
+            <a href="nova_atividade">Nova Atividade</a>
+            <a href="projetos">Projetos em Andamento</a>
+        </div>
+    </header>
+    <body>
+        {% block body %}{% endblock %}
+    </body>
+    <footer>
+    </footer>
+</html>
