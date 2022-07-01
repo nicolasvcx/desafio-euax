@@ -1,0 +1,77 @@
+header
+{
+    width: 100%;
+    height: 10%;
+    border: 1px solid;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #24252a;
+}
+.nav-bar
+{
+
+}
+.nav-bar a
+{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+.nav-bar a:hover
+{
+    color: rgba(0, 136, 169, 0.8);
+}
+
+.novo_projeto
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 88%;
+}
+
+.nova_atividade
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88%;
+}
+.projetos form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+}
+.projetos
+{
+    display: content;
+    justify-content: center;
+    align-items: center;
+    height: 88%;
+}
+.projetos select
+{
+    width: 10%;
+    height: 5%;
+}
+
+.projeto
+{
+    padding-left: 45%;
+}
+.projeto h1
+{
+    margin: 10% 0% 0% 0%;
+}
+
+body, html {
+    height: 100%;
+    margin: 0% 0% 0% 0%;
+    background-color: #F2F2F2;
+  }
