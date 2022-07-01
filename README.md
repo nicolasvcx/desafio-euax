@@ -6,7 +6,5 @@ Esta aplicação web foi desenvolvida com o microframework python Flask e o banc
 
 De maneira bem simples após clonar este diretório sera apenas necessário acessar a pasta e executar o comando 
 ````
-```
 Flask Run
-```
 ````
