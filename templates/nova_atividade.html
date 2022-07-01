@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block body %}
+        <div class="nova_atividade">
+            <form method="post">
+            <table>
+                <h1>Nova Atividade</h1>
+                <tr>
+                    <td><label for="id_do_projeto">Nome do Projeto</label><br>
+                    <select name="id_do_projeto">
+                        {% for projeto in projetos %}
+                        <option value="{{ projeto[0] }}">{{ projeto[1] }}</option>
+                        {% endfor %}
+                    </select>
+                    </td>
+                    <td><label for="nome_da_atividade">Nome da Atividade</label><br>
+                    <input type="text" id="nome_da_atividade" name="nome_da_atividade"></td>
+                </tr>
+                <tr>
+                    <td><label for="data_de_inicio">Data de Início</label><br>
+                    <input type="date" id="data_de_inicio" name="data_de_inicio" value></td>
+                    <td><label for="data_de_fim">Data Final</label><br>
+                    <input type="date" id="data_de_fim" name="data_de_fim"></td>
+                </tr>
+                <tr>
+                    <td><label for="finalizada">Finalizada: </label>
+                    <label for="finalizada">Sim</label>
+                    <input type="checkbox" id="true" name="finalizada" value="True">
+                    <label for="finalizada">Não</label>
+                    <input type="checkbox" id="false" name="finalizada" value="False"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Criar"></td>
+                </tr>
+            </form>
+            </table>
+        </div>
+ {% endblock %}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="projetos">
+    <form action="/projeto" method="POST">
+
+        <select name="id_do_projeto">
+            {% for projetos in lista_de_projetos %}
+                <option value="{{ projetos[0] }}">{{ projetos[1] }}</option>
+            {% endfor %}
+        </select>
+
+        <button type="submit">Visualizar</button>
+
+    </form>
+</div>
+{% endblock %}

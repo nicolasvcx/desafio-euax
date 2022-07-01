@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="projeto">
+    <h1>{{ projeto[1] }}</h1> ({{ porcentagem_completa }}% completo)<br>
+    {% if atrasado %}
+    Projeto Atrasado! <br>
+    {% endif %}
+
+    <br>
+    Atividades: <br>
+    {% for atividade in lista_de_atividades %}
+        #{{ atividade[0] }} - {{ atividade[1] }}.<br>
+        Início em: {{ atividade[2] }} <br>
+        Fim em: {{ atividade[3] }} <br>
+        Finalizada: {{ "Sim" if atividade[4] == "True" else "Não" }} <br><br>
+    {% endfor %}
+</div>
+{% endblock %}

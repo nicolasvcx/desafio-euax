@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="novo_projeto">
+    <form method="post">
+        <table>
+            <h1>Novo Projeto</h1>
+            <tr>
+                <td><label for="nome-projeto">Nome do Projeto</label><br>
+                <input type="text" id="nome_do_projeto" name="nome_do_projeto"></td>
+            </tr>
+            <tr>
+                <td><label for="data-inicio">Data de Início</label><br>
+                <input type="date" id="data_de_inicio" name="data_de_inicio"></td>
+                <td><label for="data-final">Data Final</label><br>
+                <input type="date" id="data_de_fim" name="data_de_fim"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Criar"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+{% endblock %}
